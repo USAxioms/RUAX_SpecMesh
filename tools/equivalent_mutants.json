@@ -1,0 +1,17 @@
+{
+ "wad18.py #014 L11 Gt->GtE": "sat: at x == MAXV both branches return MAXV",
+ "wad18.py #016 L13 Lt->LtE": "sat: at x == MINV both branches return MINV",
+ "wad18.py #018 L19 Lt->LtE": "clamp: at x == lo both branches return lo",
+ "wad18.py #020 L21 Gt->GtE": "clamp: at x == hi both branches return hi",
+ "wad18.py #043 L42 const 18->19": "from_decimal pad length 19: result is sliced to 18 digits, identical",
+ "wad18.py #044 L42 const 18->17": "from_decimal pad length 17: empty fraction gives int('0'*17)==0, non-empty fraction already has >=18 chars after padding",
+ "wad18.py #057 L49 const 0->1": "to_decimal: x < 1 differs from x < 0 only at x == 0 where -0 == 0",
+ "wad18.py #058 L49 Lt->LtE": "to_decimal: x <= 0 differs only at x == 0 where -0 == 0",
+ "wad18.py #087 L74 LtE->Lt": "sqrt_down: x == 0 gives isqrt(0) == 0 either way",
+ "hp.py #013 L6 const 100->101": "construction scale only; PI, LN2, LN10 verified bit-identical for 10^99, 10^100, 10^101",
+ "hp.py #014 L6 const 100->99": "construction scale only; PI, LN2, LN10 verified bit-identical for 10^99, 10^100, 10^101",
+ "hp.py #080 L42 const 0->1": "_series: r < 1 differs from r < 0 only at r == 0 where -0 == 0",
+ "hp.py #081 L42 Lt->LtE": "_series: r <= 0 differs only at r == 0 where -0 == 0",
+ "hp.py #147 L83 const 0->1": "ln: k == 0 shifts by zero in either branch",
+ "hp.py #148 L83 GtE->Gt": "ln: k == 0 shifts by zero in either branch"
+}
