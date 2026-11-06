@@ -1,0 +1,54 @@
+# Byte-compiled / Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Build and distribution artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Enclave and Capsule artifacts
+*.zip
+*.tar.gz
+*.iso
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing and Coverage output
+.pytest_cache/
+.coverage
+htmlcov/
+.mutmut-cache
+mutation_reports/
+
+# IDE & OS Metadata
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
